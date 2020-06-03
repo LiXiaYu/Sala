@@ -1,0 +1,21 @@
+﻿<FeatureDefs><List>
+	<Feature Name="ProtagonistOfSala" Type="Backstory">
+		<DisplayName>单人主角</DisplayName>
+		<Desc>此人乃是单人修仙故事的主角。</Desc>
+		<ModifierDef>
+			<Properties>
+				<li Name="NpcFight_BaseHitChance" AddV="0.4"/>
+				<li Name="NpcFight_BaseDodgeChance" AddV="0.2"/>
+				
+				<li Name="PracticeRateAddPFromDan" AddP="0.2"/>
+				
+				<li Name="InspirationCoefficient" AddP="1"/>
+				<li Name="ExperienceNeckTimeCostCoefficient" AddP="-0.5"/>
+				
+				<li Name="FabaoMake_SuccessRateAddV" AddV="0.25"/>
+				<li Name="DanMake_SuccessRate" AddV="0.25"/>
+			</Properties>
+		</ModifierDef>
+        <HideInUI>-1</HideInUI>
+	</Feature> 
+</List></FeatureDefs>

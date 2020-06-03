@@ -1,0 +1,315 @@
+﻿<!--事件驱动器-->
+<EventDrivers><List>
+	<Driver Name="Template">
+		<DisplayName>模板</DisplayName>
+		<AverageTimePerEvent>2</AverageTimePerEvent>
+		<BlankWeight>0</BlankWeight>
+		<ThunderAddion>-0.4</ThunderAddion>
+		<DoubleRate>0</DoubleRate>
+		<TripleRate>0</TripleRate>
+		<GrowAddp>0</GrowAddp><!--植物生长/成熟速度加成系数 -->
+		<DropAddp>1</DropAddp><!--资源产量加成系数-->
+		<BaseMood>1.5</BaseMood><!--基础心情加成系数-->
+		<WorkAddp>1</WorkAddp><!--工作效率加成系数-->
+		<PracticeAddp>1</PracticeAddp><!--基础修炼速度加成系数-->
+		<MapExploringAddp>1</MapExploringAddp><!-- 历练速度加成-->
+		<TreeExpAddtion>-0.5</TreeExpAddtion><!-- 参悟消耗减半-->
+		<FightDifficultCoefficient>0.5</FightDifficultCoefficient><!-- 妖兽系数-->
+		<Types>			
+			<Type Name="Lv4" Weight="0.05">
+				<DisplayName>奇遇事件</DisplayName>
+			 <Desc>奇遇事件包含上古之兽踪迹，上古修行者行踪等内容。</Desc> 
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>10</IntervalMin>
+				<IntervalMax>30</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			<Type Name="EnemyLv2" Weight="0.1">
+				<DisplayName>强敌事件</DisplayName>
+				<Desc>强敌事件包含高强度修行者入侵，妖兽入侵等内容。</Desc>
+				<ProtectTime>480</ProtectTime>
+				<IntervalMin>200</IntervalMin>
+				<IntervalMax>400</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv3" Weight="0.1">
+				<DisplayName>稀有事件</DisplayName>
+				<Desc>稀有事件包含高强度天气来临，灵兽来临，高级宝物出土等内容。</Desc>
+				<ProtectTime>50</ProtectTime>
+				<IntervalMin>20</IntervalMin>
+				<IntervalMax>34</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			
+			<Type Name="Secrets" Weight="0.1">
+				<DisplayName>秘闻事件</DisplayName>
+				<Desc>秘闻事件包括洞府现世，道统现世等历练秘闻。</Desc>
+				<ProtectTime>7</ProtectTime>
+				<IntervalMin>0</IntervalMin>
+				<IntervalMax>8</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Join" Weight="0.1">
+				<DisplayName>访客事件</DisplayName>
+				<Desc>访客事件包括难民加入，路人求助，仙友到访等内容。</Desc>
+				<ProtectTime>2</ProtectTime>
+				<IntervalMin>0</IntervalMin>
+				<IntervalMax>7</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Enemy" Weight="0.1">
+				<DisplayName>敌人事件</DisplayName>
+				<Desc>敌人事件包含修行者入侵，野兽入侵等内容。</Desc>
+				<ProtectTime>48</ProtectTime>
+				<IntervalMin>50</IntervalMin>
+				<IntervalMax>170</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv1" Weight="0.1">
+				<DisplayName>普通事件</DisplayName>
+				<Desc>普通事件包含普通天气来临，门派风气变化等内容。</Desc>
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>2</IntervalMin>
+				<IntervalMax>8</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv2" Weight="0.1">
+				<DisplayName>高级事件</DisplayName>
+				<Desc>高级事件包含特殊天气来临，宝物出土，灵气潮汐等内容。</Desc>
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>3</IntervalMin>
+				<IntervalMax>20</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>					
+		</Types>
+	</Driver>
+	
+	
+	
+	<Driver Name="EasyFate">
+		<DisplayName>波澜不惊</DisplayName>
+		<AverageTimePerEvent>2</AverageTimePerEvent>
+		<BlankWeight>0</BlankWeight>
+		<ThunderAddion>-0.4</ThunderAddion>
+		<DoubleRate>0</DoubleRate>
+		<TripleRate>0</TripleRate>
+		<GrowAddp>0</GrowAddp><!--植物生长/成熟速度加成系数 -->
+		<DropAddp>1</DropAddp><!--资源产量加成系数-->
+		<BaseMood>1.5</BaseMood><!--基础心情加成系数-->
+		<WorkAddp>1</WorkAddp><!--工作效率加成系数-->
+		<PracticeAddp>1</PracticeAddp><!--基础修炼速度加成系数-->
+		<MapExploringAddp>1</MapExploringAddp><!-- 历练速度加成-->
+		<TreeExpAddtion>-0.5</TreeExpAddtion><!-- 参悟消耗减半-->
+		<MindStateMoods>SpeedOfMindStateCoefficientByMoods_Easy</MindStateMoods>
+		<FightDifficultCoefficient>0.5</FightDifficultCoefficient><!-- 妖兽系数-->
+		<Types>
+			<Type Name="Lv4" Weight="0.1">
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>20</IntervalMin>
+				<IntervalMax>50</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			<Type Name="EnemyLv2" Weight="0.1">
+				<ProtectTime>15</ProtectTime>
+				<IntervalMin>20</IntervalMin>
+				<IntervalMax>40</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv3" Weight="0.1">
+				<ProtectTime>50</ProtectTime>
+				<IntervalMin>20</IntervalMin>
+				<IntervalMax>34</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			
+			<Type Name="Secrets" Weight="0.1">
+				<ProtectTime>7</ProtectTime>
+				<IntervalMin>0</IntervalMin>
+				<IntervalMax>8</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Join" Weight="0.1">
+				<ProtectTime>2</ProtectTime>
+				<IntervalMin>0</IntervalMin>
+				<IntervalMax>7</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Enemy" Weight="0.1">
+				<ProtectTime>12</ProtectTime>
+				<IntervalMin>5</IntervalMin>
+				<IntervalMax>17</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv1" Weight="0.1">
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>2</IntervalMin>
+				<IntervalMax>8</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv2" Weight="0.1">
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>3</IntervalMin>
+				<IntervalMax>20</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+		</Types>
+	</Driver>
+	
+	<Driver Name="NormalFate">
+		<DisplayName>芸芸众生</DisplayName>
+		<AverageTimePerEvent>2</AverageTimePerEvent>
+		<BlankWeight>0</BlankWeight>
+		<ThunderAddion>0</ThunderAddion>
+		<DoubleRate>0.4</DoubleRate>
+		<TripleRate>0.2</TripleRate>
+		<GoldAddtion>1</GoldAddtion>
+		<GrowAddp>-0.25</GrowAddp>
+		<TreeExpAddtion>-0.25</TreeExpAddtion>
+		<MindStateMoods>SpeedOfMindStateCoefficientByMoods</MindStateMoods>
+		<FightDifficultCoefficient>0.75</FightDifficultCoefficient><!-- 妖兽系数-->
+		<Types>
+			<Type Name="Lv4" Weight="0.1">
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>20</IntervalMin>
+				<IntervalMax>50</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="EnemyLv2" Weight="0.1">
+				<ProtectTime>15</ProtectTime>
+				<IntervalMin>20</IntervalMin>
+				<IntervalMax>40</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv3" Weight="0.1">
+				<ProtectTime>50</ProtectTime>
+				<IntervalMin>20</IntervalMin>
+				<IntervalMax>34</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			
+			<Type Name="Secrets" Weight="0.1">
+				<ProtectTime>7</ProtectTime>
+				<IntervalMin>0</IntervalMin>
+				<IntervalMax>8</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Join" Weight="0.1">
+				<ProtectTime>2</ProtectTime>
+				<IntervalMin>0</IntervalMin>
+				<IntervalMax>7</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Enemy" Weight="0.1">
+				<ProtectTime>12</ProtectTime>
+				<IntervalMin>5</IntervalMin>
+				<IntervalMax>17</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv1" Weight="0.1">
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>2</IntervalMin>
+				<IntervalMax>8</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv2" Weight="0.1">
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>3</IntervalMin>
+				<IntervalMax>20</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+		</Types>
+	</Driver>
+	
+	<Driver Name="HardFate">
+		<DisplayName>大起大落</DisplayName>
+		<AverageTimePerEvent>1</AverageTimePerEvent>
+		<BlankWeight>0</BlankWeight>
+		<ThunderAddion>0.4</ThunderAddion>
+		<DoubleRate>0.4</DoubleRate>
+		<TripleRate>0.15</TripleRate>
+		<GrowAddp>-0.5</GrowAddp>
+		<MindStateMoods>SpeedOfMindStateCoefficientByMoods</MindStateMoods>
+		<FightDifficultCoefficient>1</FightDifficultCoefficient><!-- 妖兽系数-->
+		<Types>
+			<Type Name="Lv4" Weight="0.1">
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>20</IntervalMin>
+				<IntervalMax>50</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			<Type Name="EnemyLv2" Weight="0.1">
+				<ProtectTime>15</ProtectTime>
+				<IntervalMin>12</IntervalMin>
+				<IntervalMax>30</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv3" Weight="0.1">
+				<ProtectTime>25</ProtectTime>
+				<IntervalMin>5</IntervalMin>
+				<IntervalMax>20</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			
+			<Type Name="Secrets" Weight="0.1">
+				<ProtectTime>7</ProtectTime>
+				<IntervalMin>0</IntervalMin>
+				<IntervalMax>12</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Join" Weight="0.1">
+				<ProtectTime>2</ProtectTime>
+				<IntervalMin>0</IntervalMin>
+				<IntervalMax>14</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Enemy" Weight="0.1">
+				<ProtectTime>12</ProtectTime>
+				<IntervalMin>2</IntervalMin>
+				<IntervalMax>14</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			
+			<Type Name="Lv1" Weight="0.1">
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>0</IntervalMin>
+				<IntervalMax>8</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+			
+			<Type Name="Lv2" Weight="0.1">
+				<ProtectTime>0</ProtectTime>
+				<IntervalMin>0</IntervalMin>
+				<IntervalMax>17</IntervalMax>
+				<UnLockLevel>0</UnLockLevel>
+			</Type>
+		</Types>
+	</Driver>
+	
+	
+</List></EventDrivers>

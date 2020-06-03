@@ -1,0 +1,13 @@
+﻿<Experiences><List>
+	<Experience Name="SALA_Idlest" Group="G3">
+		<DisplayName>散人开局</DisplayName>
+		<Desc>作为一个真正的散人，伟力归于自身。</Desc>
+		<Point>0</Point>
+		<NpcSlot>0</NpcSlot>
+		<ModifierDef>
+			<Feature>
+				<li Name="ProtagonistOfSala" />
+			</Feature> 
+		</ModifierDef>
+	</Experience>
+</List></Experiences>
